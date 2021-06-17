@@ -1,0 +1,16 @@
+Background color for numbering 1,2,3 is :#EEB500 and font color is white
+Text color for book title "good housekeeping" is:#0A5A78
+text color for paragraph 'A priminent magazine....' is:#4C4C4C
+Background-color for 'Subscribe now' is red and font color is white
+==========================================================================================
+Text:
+Good Housekeeping
+A prominent magazine for mothers, Good Housekeeping offers advice and articles on cooking, home improvement, and dealing with children. 
+
+Better Homes & Gardens
+This action-oriented publication covers various actions and challenges associated with home improvement and gardening. Expect detailed tips on subjects ranging from interior decorating to healthy cooking. 
+
+Martha Stewart Living
+It is perfect for those who want to be inspired into improving your home, garden and cooking skills. For brand new recipes, articles, and DIY projects, no one is as well known and respected as Martha Steward
+
+Reference: https://www.allyoucanread.com/top-10-food-magazines/

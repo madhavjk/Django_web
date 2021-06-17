@@ -1,0 +1,143 @@
+<!--
+	WAP to demonstrate HTML Form
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Form</title>
+  </head>
+  <style>
+    textarea {
+      overflow-y: scroll;
+    }
+    .required-field::before {
+  content: "*";
+  color: red;
+}
+  </style>
+  <body>
+    <h1>Zoo Keeper Application</h1>
+    <p>
+      <i>Please complete the form. Mandatory fields are marked with a<span class="required-field"></span></i>
+    </p>
+    <fieldset>
+      <legend><h3>CONTACT DETAILS</h3></legend>
+      <form novalidate>
+        <table cellspacing="0" cellpadding="5" width="600">
+          <tr>
+            <td>
+              <label for="name">Name<span class="required-field"></label>
+            </td>
+            <!-- To take single line text input... use textfield -->
+            <td>
+              <input type="text" placeholder="" id="name" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="Telephone">Telephone</label></td>
+            <!-- To take single line text input... use textfield -->
+            <td>
+              <input type="number" placeholder="" id="Telephone" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="email">Email<span class="required-field"></label>
+            </td>
+            <!-- To take email input... use emailfield -->
+            <td>
+              <input type="email" placeholder="" id="email" />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </fieldset>
+
+    <fieldset>
+      <legend><h3>PERSONAL INFORMATION</h3></legend>
+      <form novalidate>
+        <table cellspacing="0" cellpadding="5" width="600">
+          <tr>
+            <td>
+              <label for="Age"><span class="required-field">Age</label>
+            </td>
+            <!-- To take single line text input... use textfield -->
+            <td>
+              <input type="number" placeholder="" id="Age" />
+            </td>
+          </tr>
+
+          <tr>
+            <!-- Use drop down/combo box when you wanted to select one choice from higher nnumber of available choices -->
+            <td>Gender</td>
+            <td>
+              <select>
+                <option>Female</option>
+                <option>Male</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td valign="top">
+              When did you<br />
+              first know you<br />
+              wanted to be a <br />
+              zookeeper?
+            </td>
+            <!-- To take input multiline text, go for textarea  -->
+            <td><textarea name="address" rows="5" cols="25"></textarea></td>
+          </tr>
+          <tr></tr>
+        </table>
+      </form>
+    </fieldset>
+
+    <fieldset>
+      <legend><h3>PICK YOUR FAVORITE ANIMALS</h3></legend>
+      <form novalidate>
+        <table cellspacing="0" cellpadding="5" width="600">
+          <tr>
+            <!-- Select multiple choices from available choices, go for checkbox button -->
+            <td>
+              <input type="checkbox" value="Zebra" name="Zebra" id="Zebra" />
+
+              <label for="Zebra"> Zebra</label
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+              <input type="checkbox" value="Cat" name="Cat" id="Cat" /><label
+                for="Cat"
+                >Cat</label
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="checkbox" value="" name="travel" id="travel" /><label
+                for="travel"
+                >Anaconda</label
+              >&nbsp;&nbsp;
+
+              <input type="checkbox" value="Human" name="Human" id="Human" />
+
+              <label for="Human"> Human</label>&nbsp;&nbsp;<br />
+
+              <input type="checkbox" value="sports" name="sports" id="sports" />
+
+              <label for="sports"> Elephant </label>&nbsp;&nbsp;
+
+              <input type="checkbox" value="sports" name="sports" id="sports" />
+
+              <label for="sports"> Wildbeast</label>&nbsp;&nbsp;&nbsp;
+
+              <input type="checkbox" value="sports" name="sports" id="sports" />
+
+              <label for="sports"> Pigeon</label
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+              <input type="checkbox" value="sports" name="sports" id="sports" />
+
+              <label for="sports"> Crab</label>&nbsp;&nbsp;
+            </td>
+          </tr>
+        </table>
+      </form>
+    </fieldset>
+    <br /><input type="submit" value="Submit Application" />
+  </body>
+</html>
