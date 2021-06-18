@@ -1,0 +1,97 @@
+<!--
+	WAP to demonstrate HTML Form
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Form</title>
+    <script>
+      function myFunction() {
+        var ch1, ch2, tot;
+        var call = document.getElementById("text1").value;
+        var sms = document.getElementById("text2").value;
+
+        if (call <= 50) {
+          ch1 = call * 0.5;
+        }
+
+        if (50 < call && call <= 150) {
+          ch1 = call * 0.7;
+        }
+        if (150 < call && call <= 300) {
+          ch1 = call * 0.85;
+        }
+
+        if (call > 300) {
+          ch1 = call * 0.95;
+        }
+
+        if (sms <= 50) {
+          ch2 = sms * 0;
+        }
+        if (50 < sms && sms <= 200) {
+          ch2 = sms * 0.25;
+        }
+        if (200 < sms && sms <= 400) {
+          ch2 = sms * 0.4;
+        }
+        if (sms > 400) {
+          ch2 = sms * 0.45;
+        }
+        tot = ch1 + ch2;
+
+        alert(
+          "Charges for call:" +
+            ch1 +
+            "\n" +
+            "Charges for SMS:" +
+            ch2 +
+            "\n" +
+            "Total Charges:" +
+            tot
+        );
+
+        document.getElementById("output1").innerHTML =
+          "Charges for call:" + ch1;
+        document.getElementById("output2").innerHTML = "Charges for SMS:" + ch2;
+        document.getElementById("output3").innerHTML = "Total Charges:" + tot;
+      }
+    </script>
+  </head>
+
+  <body>
+    <fieldset>
+      <legend><h3>Calculate bill amount for the telephone company</h3></legend>
+      <form novalidate>
+        <table cellspacing="0" cellpadding="5" width="600">
+          <tr>
+            <td>
+              <label for="quantity">Enter No of calls:</label>
+            </td>
+            <!-- To take single line text input... use textfield -->
+            <td>
+              <input type="number" placeholder="" id="text1" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="quantity">Enter SMS:</label>
+            </td>
+            <!-- To take single line text input... use textfield -->
+            <td>
+              <input type="number" placeholder="" id="text2" />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </fieldset>
+
+    <br />
+
+    <button type="button" onclick="myFunction()">Try it</button>
+    <p id="output1"></p>
+    <p id="output2"></p>
+    <p id="output3"></p>
+  </body>
+</html>
