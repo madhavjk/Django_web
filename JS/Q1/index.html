@@ -1,0 +1,63 @@
+<!--
+	WAP to demonstrate HTML Form
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Form</title>
+  </head>
+  <style></style>
+  <script>
+    function myFunction() {
+      var str1 = document.getElementById("text1").value;
+      var str2 = document.getElementById("text2").value;
+      var str3 = document.getElementById("text3").value;
+      var res = str1.replace(str2, str3);
+      document.getElementById("output").innerHTML = res;
+    }
+  </script>
+  <body>
+    <fieldset>
+      <legend><h3>Find & replace</h3></legend>
+      <form novalidate>
+        <table cellspacing="0" cellpadding="5" width="600">
+          <tr>
+            <td>
+              <label for="text">Enter Text</label>
+            </td>
+            <!-- To take single line text input... use textfield -->
+            <td>
+              <input type="text" placeholder="" id="text1" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="text">Enter Text to replace</label>
+            </td>
+            <!-- To take single line text input... use textfield -->
+            <td>
+              <input type="text" placeholder="" id="text2" />
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="text">Enter Text to replace with</label>
+            </td>
+            <!-- To take single line text input... use textfield -->
+            <td>
+              <input type="text" placeholder="" id="text3" />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </fieldset>
+
+    <br />
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="output"></p>
+  </body>
+</html>
