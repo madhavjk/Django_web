@@ -1,1 +1,1 @@
-# Django_web
+# Django_we
